@@ -1,0 +1,31 @@
+baseURL = 'https://dearjasker.github.io/'
+title = 'Cassian Lin'
+defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+hasCJKLanguage = true
+[pagination]
+ pagerSize = 20
+[languages.zh]
+ languageName = '中文'
+ languageCode = 'zh-CN'
+ weight = 1
+[languages.en]
+ languageName = 'English'
+ languageCode = 'en'
+ weight = 2
+[taxonomies]
+ category = 'categories'
+ tag = 'tags'
+[markup.goldmark.renderer]
+ unsafe = false
+[markup.goldmark.extensions.passthrough]
+ enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+ block = [['\[', '\]'], ['$$', '$$']]
+ inline = [['$', '$'], ['\(', '\)']]
+[markup.tableOfContents]
+ startLevel = 2
+ endLevel = 3
+[outputs]
+ home = ['HTML', 'RSS', 'JSON']
